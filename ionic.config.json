@@ -1,0 +1,7 @@
+{
+  "name": "tutorial-ionic-angular-notepad",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
