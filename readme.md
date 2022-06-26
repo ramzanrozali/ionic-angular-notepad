@@ -19,3 +19,9 @@ The tutorial cover many of the core concepts such as:
 </ul>
 
 <strong>I have update some of the code as to use latest version of some dependencies</strong> 
+
+There are 2 branches:
+<ol>
+<li>"master" branch that use promises on storage</li>
+<li>"Rxjs" branch that use RxJS for State Management</li>
+</ol>
