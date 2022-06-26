@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
 import { Note } from '../interfaces/note';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NotesService {
 
-  public notes: Note[] = [];
-  public loaded: boolean = false;
+  public notes: Observable<Note[]>;
 
   constructor(private storage: Storage) {
     this.storage.create();

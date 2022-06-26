@@ -1,7 +1,10 @@
 <h1>Building a Notepad Application from Scratch with Ionic</h1>
 
 Based on tutorial from:
-https://www.joshmorony.com/building-a-notepad-application-from-scratch-with-ionic/
+<ul>
+<li>https://www.joshmorony.com/building-a-notepad-application-from-scratch-with-ionic</li>
+<li>https://eliteionic.com/tutorials/using-ngrx-for-state-management-in-an-ionic-angular-application</li>
+</ul>
 
 The tutorial cover many of the core concepts such as:
 
