@@ -14,7 +14,9 @@ export class HomePage implements OnInit {
   }
 
   ngOnInit(){
-    this.notesService.load();
+    // this.notesService.getNote(noteId).subscribe(note => {
+    //   this.note = note;
+    // });
   }
 
   addNote(){

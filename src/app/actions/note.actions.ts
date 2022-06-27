@@ -9,7 +9,7 @@ export class CreateNote implements Action {
   constructor(public payload: { note: Note }) {}
 }
 export class DeleteNote implements Action {
-  readonly type = ActionTypes.DeleteNote;
+  type = ActionTypes.DeleteNote;
   constructor(public payload: { note: Note }) {}
 }
 export type ActionsUnion = CreateNote | DeleteNote;

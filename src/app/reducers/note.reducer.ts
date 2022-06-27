@@ -25,9 +25,10 @@ export function reducer(
       };
     }
     case fromNote.ActionTypes.DeleteNote: {
+      const newState = [...state.data];
+      newState.splice(state.data.indexOf(action.payload.note), 1);
       return {
-        ...state,
-        ...state.data.splice(state.data.indexOf(action.payload.note), 1),
+        data: newState
       };
     }
     default: {
@@ -36,6 +37,6 @@ export function reducer(
   }
 }
 
-export const getNotes = (state: NoteState) => state.data;
+export const getNotes = (state: NoteState) => state?.data;
 export const getNoteById = (state: NoteState, props: { id: string }) =>
   state.data.find((note) => note.id === props.id);
